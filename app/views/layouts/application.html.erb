@@ -12,9 +12,6 @@
 <%= yield %>
 <!-- above pulls in index.html.erb -->
 
-<ul>
-  <li>About</li>
-  <li>
     <div id="user_nav">
       <% if current_user %>
         Welcome, <strong><%= current_user.name %></strong>!
@@ -22,10 +19,7 @@
       <% else %>
         <%= link_to "Log in", "/auth/twitter", id: "sign_in" %>
       <% end %>
-    </div></li>
-</ul>
-
-
+    </div>
 
 </body>
 </html>
