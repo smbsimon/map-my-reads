@@ -1,8 +1,5 @@
 require 'spec_helper'
 
-#  and then you visit "/auth/twitter"
-
-
 
 describe 'the application', type: :feature do
 
@@ -17,9 +14,7 @@ describe 'the application', type: :feature do
     end
   end
 
-
 end
-
 
 
 def log_in(user)
