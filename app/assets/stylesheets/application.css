@@ -14,13 +14,19 @@
  *= require_self
  */
 
-h1 {
+.header {
   font-family: "Courier New";
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 0.2em;
+  padding-top: 2cm;
+  padding-bottom: 0.5cm;
+
 }
 
 p {
   font-family: "Courier New", monospace;
-  font-size: 100%;
+  font-size: 120%;
+  text-align: center;
+  padding-bottom: 0.5cm;
 }
