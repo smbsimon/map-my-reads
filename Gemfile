@@ -39,6 +39,12 @@ gem 'rails-html-sanitizer', '~> 1.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+
+group :test do
+  gem 'rspec-rails', '~> 3.1.0'
+  gem 'capybara-rails'
+end
+
 group :development, :test do
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

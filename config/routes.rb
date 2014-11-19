@@ -9,4 +9,8 @@ Rails.application.routes.draw do
   get 'home/index'
   root "home#index"
 
+
+  get '/step_one' => 'pages#index'
+  get '/step_two' => 'pages#index'
+  
 end
