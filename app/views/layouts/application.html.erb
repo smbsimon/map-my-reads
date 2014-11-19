@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Discuss</title>
+
+
+  <title>Read With Me</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<!-- below pulls in index.html.erb -->
-<%= yield %>
-<!-- above pulls in index.html.erb -->
+  <!-- below pulls in index.html.erb -->
+  <%= yield %>
+  <!-- above pulls in index.html.erb -->
 
-    <div id="user_nav">
-      <% if current_user %>
-        Welcome, <strong><%= current_user.name %></strong>!
-        <%= link_to "Log out", signout_path, id: "sign_out" %>
-      <% else %>
-        <%= link_to "Log in", "/auth/twitter", id: "sign_in" %>
-      <% end %>
-    </div>
+  <div id="user_nav">
+    <% if current_user %>
+    <p><a class="btn btn-lg btn-default" href=signout role="button">Log Out</a></p>
+    <% else %>
+    <p><a class="btn btn-lg btn-default" href="/auth/twitter" role="button">Log In With Twitter</a></p>
+    <% end %>
+  </div>
+
+
+
 
 </body>
 </html>
