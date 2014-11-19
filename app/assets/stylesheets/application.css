@@ -14,7 +14,7 @@
  *= require_self
  */
 
-.header {
+.main_header {
   font-family: "Courier New";
   text-transform: uppercase;
   text-align: center;
@@ -28,5 +28,13 @@ p {
   font-family: "Courier New", monospace;
   font-size: 120%;
   text-align: center;
+  padding-bottom: 0.5cm;
+}
+
+.page_header {
+  font-family: "Courier New";
+  text-align: center;
+  letter-spacing: 0.2em;
+  padding-top: 2cm;
   padding-bottom: 0.5cm;
 }

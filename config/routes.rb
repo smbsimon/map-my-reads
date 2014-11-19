@@ -12,5 +12,5 @@ Rails.application.routes.draw do
 
   get '/step_one' => 'pages#index'
   get '/step_two' => 'pages#index'
-
+  
 end
