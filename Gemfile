@@ -46,6 +46,7 @@ group :test do
 end
 
 group :development, :test do
+  gem 'launchy'
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 

@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   get 'auth/failure', to: redirect('/')
   get 'signout', to: 'sessions#destroy', as: 'signout'
 
-  get 'home/index'
-  root "home#index"
+  get  'home/index'
+  root 'home#index'
 
 
   get '/book'     => 'books#index'
