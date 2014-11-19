@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   root "home#index"
 
 
-  get '/step_one' => 'pages#index'
-  get '/step_two' => 'pages#index'
+  get '/book'     => 'books#index'
+  get '/location' => 'locations#index'
+  get '/share'    => 'shares#index'
 end
