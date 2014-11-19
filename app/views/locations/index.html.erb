@@ -2,4 +2,8 @@
   <p> This is step two. Choose a location! </p>
 </div>
 
-<p><a class="btn btn-lg btn-default" href=share role="button">Next --></a></p>
+<%= form_tag share_path, method: :get do %>
+<%= text_field_tag :location %>
+<%= hidden_field_tag :book, @book %>
+<%= submit_tag "Next -->", class: "btn btn-lg btn-default" %>
+<% end %>
