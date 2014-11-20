@@ -1,5 +1,9 @@
 <div class="page_header">
-  <p> This is step one. Choose a book! </p>
-</div>
+  <p> What book are you reading? </p>
 
-<p><a class="btn btn-lg btn-default" href=location role="button">Next --></a></p>
+  <%= form_tag location_path, method: :get do %>
+  <%= text_field_tag :book %>
+  <%= submit_tag "Next -->", class: "btn btn-lg btn-default" %>
+  <% end %>
+
+</div>
