@@ -12,9 +12,7 @@
 </head>
 <body>
 
-  <!-- below pulls in index.html.erb -->
   <%= yield %>
-  <!-- above pulls in index.html.erb -->
 
   <div class="log_button">
     <% if current_user %>
@@ -23,8 +21,6 @@
     <p><a class="btn btn-lg btn-default" href="/auth/twitter" role="button">Log In With Twitter</a></p>
     <% end %>
   </div>
-
-
 
 
 </body>
