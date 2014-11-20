@@ -11,7 +11,6 @@
          height = 400,
          left   = ($(window).width()  - width)  / 2,
          top    = ($(window).height() - height) / 2,
-        //  url    = "sara",
          url    = "https://twitter.com/intent/tweet?text=Come%20read%20with%20me%3F"
          opts   = 'status=1' +
                   ',width='  + width  +
@@ -26,4 +25,4 @@
   </script>
 </div>
 
-<p><a class="btn btn-lg btn-default" href=book role="button">Start Over</a></p>
+<p><%= link_to "Start Over", new_book_path, class: "btn btn-lg btn-default" %></p>

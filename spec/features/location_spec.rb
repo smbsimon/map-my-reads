@@ -6,7 +6,7 @@ describe 'choose a location', type: :feature do
     before(:each) do
       user = User.create({provider: "twitter", uid: 3, name: "Trout", oauth_token: "token", oauth_secret: "secret" })
       log_in(user)
-      visit('/book')
+      visit('/books/new')
       click_button('Next -->')
     end
 

@@ -16,7 +16,7 @@
 
   <div class="log_button">
     <% if current_user %>
-    <p><a class="btn btn-lg btn-default" href=signout role="button">Log Out</a></p>
+    <p><%= link_to "Log Out", signout_path, class: "btn btn-lg btn-default" %></p>
     <% else %>
     <p><a class="btn btn-lg btn-default" href="/auth/twitter" role="button">Log In With Twitter</a></p>
     <% end %>
