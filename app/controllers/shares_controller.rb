@@ -1,5 +1,4 @@
 class SharesController < ApplicationController
-  def index
-
+  def new
   end
 end

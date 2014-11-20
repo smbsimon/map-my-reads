@@ -9,8 +9,7 @@ Rails.application.routes.draw do
   get  'home/index'
   root 'home#index'
 
-
-  get '/book'     => 'books#index'
-  get '/location' => 'locations#index'
-  get '/share'    => 'shares#index'
+  resources :books,     only: [:new]
+  resources :locations, only: [:new]
+  resources :shares,    only: [:new]
 end
