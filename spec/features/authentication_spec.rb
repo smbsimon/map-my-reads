@@ -5,7 +5,7 @@ describe 'the application', type: :feature do
 
   context 'when logged in' do
     before(:each) do
-      user = User.create({provider: "twitter", uid: 1, name: "Sara", oauth_token: "token", oauth_secret: "secret" })
+      user = User.create({provider: "twitter", uid: 1, name: "Goldfish", oauth_token: "token", oauth_secret: "secret" })
       log_in(user)
     end
 
