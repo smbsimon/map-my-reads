@@ -9,10 +9,10 @@ describe 'tweet', type: :feature do
     end
 
     it 'can tweet' do
-      visit('/book')
+      visit('/books/new')
       fill_in('book', :with => 'book title')
       click_button('Next -->')
-      visit('/location')
+      visit('/locations/new')
       fill_in('location', :with => 'location title')
       click_button('Next -->')
       expect(page).to have_content('Share your book and location.')
