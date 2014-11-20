@@ -1,5 +1,5 @@
 class LocationsController < ApplicationController
-  def index
+  def new
     @book = params[:book]
   end
 end
