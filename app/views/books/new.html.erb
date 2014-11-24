@@ -1,9 +1,21 @@
+<!-- <div class="page_header">
+  <p> What book are you reading? </p> -->
+
+  <%#= form_tag new_location_path, method: :get do %>
+    <%#= text_field_tag :book %>
+    <%#= submit_tag "Next -->", class: "btn btn-lg btn-default" %>
+  <%# end %>
+
+<!-- </div> -->
+
+
 <div class="page_header">
   <p> What book are you reading? </p>
 
-  <%= form_tag new_location_path, method: :get do %>
-    <%= text_field_tag :book %>
-    <%= submit_tag "Next -->", class: "btn btn-lg btn-default" %>
+  <%= form_for(@book) do |f| %>
+    <%= f.label :title %><br/>
+    <%= f.text_field :title %>
+    <%= f.submit class: "btn btn-lg btn-default" %>
   <% end %>
 
 </div>
