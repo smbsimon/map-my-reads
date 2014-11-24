@@ -1,0 +1,11 @@
+<h1>My Past Books</h1>
+
+<ul id="books">
+  <% @books.each do |book| %>
+    <li>
+      <%= book.title %>
+    </li>
+  <% end %>
+</ul>
+
+<p><%= link_to "Start Over", new_book_path, class: "btn btn-lg btn-default" %></p>
