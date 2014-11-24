@@ -7,7 +7,7 @@ describe 'choose a location', type: :feature do
       user = User.create({provider: "twitter", uid: 3, name: "Trout", oauth_token: "token", oauth_secret: "secret" })
       log_in(user)
       visit('/books/new')
-      click_button('Next -->')
+      click_button('Create Book')
     end
 
     it 'can select a location' do

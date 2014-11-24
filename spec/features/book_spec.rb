@@ -9,8 +9,8 @@ describe 'choose a book', type: :feature do
     end
 
     it 'can select a book' do
-      fill_in('book', :with => 'The Iliad')
-      click_button('Next -->')
+      fill_in('book[title]', :with => 'The Iliad')
+      click_button('Create Book')
       expect(page).to have_content('Where')
       expect(page).to have_link('Log Out')
     end

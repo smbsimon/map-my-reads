@@ -10,8 +10,8 @@ describe 'tweet', type: :feature do
 
     it 'can tweet' do
       visit('/books/new')
-      fill_in('book', :with => 'book title')
-      click_button('Next -->')
+      fill_in('book[title]', :with => 'book title')
+      click_button('Create Book')
       visit('/locations/new')
       fill_in('location', :with => 'location title')
       click_button('Next -->')
