@@ -19,4 +19,5 @@ class BooksController < ApplicationController
 
     redirect_to new_location_path
   end
+
 end
