@@ -1,4 +1,6 @@
 class BooksController < ApplicationController
+  include BookHelper
+
   def index
     @books = Book.all
   end
@@ -12,9 +14,9 @@ class BooksController < ApplicationController
   end
 
   def create
-    @book = Book.new
-    @book.title = params[:book][:title]
+    @book = Book.new(book_params)
     @book.save
+
     redirect_to new_location_path
   end
 end
