@@ -3,8 +3,12 @@ class BooksController < ApplicationController
     @book = Book.new
   end
 
-  def show
+  def index
     @books = Book.all
+  end
+
+  def show
+    redirect_to books_path
   end
 
   def create
