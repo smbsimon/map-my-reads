@@ -1,8 +1,4 @@
 class BooksController < ApplicationController
-  def new
-    @book = Book.new
-  end
-
   def index
     @books = Book.all
   end
@@ -11,7 +7,14 @@ class BooksController < ApplicationController
     redirect_to books_path
   end
 
+  def new
+    @book = Book.new
+  end
+
   def create
+    @book = Book.new
+    @book.title = params[:book][:title]
+    @book.save
     redirect_to new_location_path
   end
 end

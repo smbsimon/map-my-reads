@@ -2,9 +2,8 @@
   <p> What book are you reading? </p>
 
   <%= form_for(@book) do |f| %>
-    <%= f.label :title %><br/>
     <%= f.text_field :title %>
-    <%= f.submit class: "btn btn-lg btn-default" %>
+    <%= f.submit %>
   <% end %>
 
 </div>
