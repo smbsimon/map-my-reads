@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'omniauth-twitter'
-gem 'pry'
 gem 'twitter'
 gem "figaro"
 
