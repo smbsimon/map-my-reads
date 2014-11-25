@@ -17,7 +17,7 @@ class BooksController < ApplicationController
     @book = Book.new(book_params)
     @book.save
 
-    redirect_to new_location_path
+    redirect_to new_share_path
   end
 
 end
