@@ -1,11 +1,35 @@
 <div class="page_header">
-  <h1>My Reading History</h1></br>
+  <h1>What's Being Read Around the World</h1></br>
 
     <% @books.each do |book| %>
         <%= book.title %></br>
         <%= book.city %></br></br>
     <% end %>
 
+
+
+<%= @tweet %>
+
+<a class="btn btn-lg btn-default twitter popup" href="http://twitter.com/share?text=Come%20read%20with%20me?">Tweet</a>
+
+<script>
+$('.popup').click(function(event) {
+  var width  = 575,
+  height = 400,
+  left   = ($(window).width()  - width)  / 2,
+  top    = ($(window).height() - height) / 2,
+  url    = "https://twitter.com/intent/tweet?text=Come%20read%20with%20me%3F"
+  opts   = 'status=1' +
+  ',width='  + width  +
+  ',height=' + height +
+  ',top='    + top    +
+  ',left='   + left;
+
+  window.open(url ,'twitter', opts);
+
+  return false;
+});
+</script>
 </div>
 
-<p><%= link_to "Start Over", new_book_path, class: "btn btn-lg btn-default" %></p>
+<p><%= link_to "Submit Another Book", new_book_path, class: "btn btn-lg btn-default" %></p>
