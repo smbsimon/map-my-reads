@@ -1,5 +1,7 @@
 class BooksController < ApplicationController
   include BookHelper
+  before_filter :ensure_user
+  before_filter :current_user
 
   def index
     @books = Book.all
