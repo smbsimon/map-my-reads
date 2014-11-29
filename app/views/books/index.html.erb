@@ -5,15 +5,29 @@
   <p>A platform for sharing your books and reading spots.</p>
 </div>
 
-<div class="page_header">
+<!-- <div class="page_header">
   <h4> What's Being Read Around the World </h4>
 
     <% @books.each do |book| %>
     <div class="book" data-city="<%= book.city %>">
-        <%= book.title %></br>
+        <%#= book.title %></br>
     <div class="book_city"></div>
-        <%= book.city %></br></br>
-    <% end %>
+        <%#= book.city %></br></br>
+    <% end %> -->
+
+
+    <div class="page_header">
+      <% @books.each do |book| %>
+      <div class="book" data-city="<%= book.city %>">
+        <h3><%= book.title %></h3>
+        <dl>
+          <dt>City</dt>
+          <dd class="book_city"><%= book.city %></dd>
+        </dl>
+      </div>
+      <% end %>
+    </div>
+
 
 
 <%= @tweet %>
