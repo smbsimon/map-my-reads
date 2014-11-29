@@ -38,3 +38,17 @@ p {
   text-align: center;
   padding-bottom: 0.5cm;
 }
+
+.filter {
+  background-color: darken($background-color, 10);
+  padding: 1em;
+  label {
+    font-size: 0.8em;
+    &:after {
+      content: ': ';
+    }
+  }
+  select, input {
+    margin-right: 1em;
+  }
+}

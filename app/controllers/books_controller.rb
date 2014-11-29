@@ -1,11 +1,13 @@
 class BooksController < ApplicationController
   include BookHelper
+  respond_to :html, :json
   before_filter :ensure_user
   before_filter :current_user
 
   def index
     @books = Book.all
     @cities = @books.pluck(:city).uniq
+    respond_with @books
   end
 
   def show
