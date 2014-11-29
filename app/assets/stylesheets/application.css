@@ -20,8 +20,16 @@
   text-align: center;
   letter-spacing: 0.2em;
   padding-top: 2cm;
-  padding-bottom: 0.5cm;
+  /*padding-bottom: 0.5cm;*/
 
+}
+
+.page_header {
+  font-family: "Courier New";
+  text-align: center;
+  letter-spacing: 0.2em;
+  padding-top: 0.5cm;
+  padding-bottom: 0.8cm;
 }
 
 p {
@@ -31,10 +39,16 @@ p {
   padding-bottom: 0.5cm;
 }
 
-.page_header {
-  font-family: "Courier New";
-  text-align: center;
-  letter-spacing: 0.2em;
-  padding-top: 2cm;
-  padding-bottom: 0.8cm;
+.filter {
+  background-color: darken($background-color, 10);
+  padding: 1em;
+  label {
+    font-size: 0.8em;
+    &:after {
+      content: ': ';
+    }
+  }
+  select, input {
+    margin-right: 1em;
+  }
 }

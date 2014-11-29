@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'omniauth-twitter'
 gem 'twitter'
 gem "figaro"
+gem 'responders', '~> 2.0'
 
 gem 'rails', '4.2.0.beta1'
 gem 'pg'
