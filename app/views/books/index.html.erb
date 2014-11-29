@@ -1,11 +1,15 @@
+<div class="main_header">
+  <h1>Read With Me?</h1></br>
+  <p>A platform for sharing your books and reading spots.</p>
+</div>
+
 <div class="page_header">
-  <h1>What's Being Read Around the World</h1></br>
+  <h4> What's Being Read Around the World </h4>
 
     <% @books.each do |book| %>
         <%= book.title %></br>
         <%= book.city %></br></br>
     <% end %>
-
 
 
 <%= @tweet %>
