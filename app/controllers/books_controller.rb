@@ -5,6 +5,7 @@ class BooksController < ApplicationController
 
   def index
     @books = Book.all
+    @cities = @books.pluck(:city).uniq
   end
 
   def show

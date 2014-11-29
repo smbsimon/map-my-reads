@@ -1,3 +1,5 @@
+<%= render "filter" %>
+
 <div class="main_header">
   <h1>Read With Me?</h1></br>
   <p>A platform for sharing your books and reading spots.</p>
@@ -7,7 +9,9 @@
   <h4> What's Being Read Around the World </h4>
 
     <% @books.each do |book| %>
+    <div class="book" data-city="<%= book.city %>">
         <%= book.title %></br>
+    <div class="book_city"><%= book.city %></div>
         <%= book.city %></br></br>
     <% end %>
 
