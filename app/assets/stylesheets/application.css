@@ -20,25 +20,38 @@
   font-family: "Courier New";
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 0.2em;
-  padding-top: 2cm;
-  /*padding-bottom: 0.5cm;*/
-
+  letter-spacing: 0.1em;
+  padding-top: 1.5cm;
 }
 
 .page_header {
   font-family: "Courier New";
   text-align: center;
-  letter-spacing: 0.2em;
-  padding-top: 0.5cm;
+  letter-spacing: 0.1em;
+  padding-top: 1.5cm;
   padding-bottom: 0.8cm;
+}
+
+.section_header {
+  font-family: "Courier New";
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding-top: .2cm;
+  padding-bottom: 1.5cm;
+}
+
+.about_header {
+  font-family: "Courier New";
+  text-align: center;
+  padding-top: 1.5cm;
+  padding-bottom: 0.1cm;
 }
 
 p {
   font-family: "Courier New", monospace;
   font-size: 120%;
   text-align: center;
-  padding-bottom: 0.5cm;
+  padding-bottom: 0.2cm;
 }
 
 .filter {
@@ -55,18 +68,14 @@ p {
   }
 }
 
-span {
-  font-family: "Courier New";
-  text-transform: lowercase;
-  text-align: center;
-  color: black;
-  font-size: 1.5em;
-  margin-left: 2em;
-}
-
 .sidr {
   padding-top: 0.9cm;
   font-family: "Courier New";
   text-align: center;
   color: white;
+}
+
+.menu {
+  font-family: "Courier New";
+  text-align: center;
 }

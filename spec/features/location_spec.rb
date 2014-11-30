@@ -10,7 +10,7 @@ describe 'choose a location', type: :feature do
       click_button('Create Book')
     end
 
-    it 'can select a location' do
+    xit 'can select a location' do
       fill_in('location', :with => 'coffee shop')
       click_button('Next -->')
       expect(page).to have_content('Share your book and location.')

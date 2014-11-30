@@ -15,30 +15,24 @@
 <%= csrf_meta_tags %>
 </head>
 <body>
+  <%= yield %>
 
   <% if current_user %>
-    <a id="left-menu" href="#left-menu"><span>Menu</span></a>
-
+    <div class="menu">
+      <a class="btn btn-lg btn-default" id="left-menu" href="#left-menu">Menu</a>
+    </div>
 
     <div id="sidr">
       <p>READ WITH ME<p>
       <a href="/books">Reading History</a></br>
       <a href="/books/new">Add New Book</a></br>
       <a href="/about">About</a></br>
-      <a href="http://twitter.com/share?text=Read%20with%20me?">Tweet</a></br>
-
+      <a href="/signout">Log Out</a></br>
     </div>
-  <% end %>
 
-  <%= yield %>
-
-  <div class="log_button">
-    <% if current_user %>
-    <p><%= link_to "Log Out", signout_path, class: "btn btn-lg btn-default" %></p>
-    <% else %>
+  <% else %>
     <p><a class="btn btn-lg btn-default" href="/auth/twitter" role="button">Log In With Twitter</a></p>
-    <% end %>
-  </div>
+  <% end %>
 
 
 </body>
