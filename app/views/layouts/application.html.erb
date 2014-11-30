@@ -2,15 +2,33 @@
 <html>
 <head>
 
-
   <title>Read With Me</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="javascripts/sidr/stylesheets/jquery.sidr.dark.scss">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+
+</body>
+</html>
+
+<%= csrf_meta_tags %>
 </head>
 <body>
+
+  <% if current_user %>
+    <a id="left-menu" href="#left-menu"><span>Menu</span></a>
+
+
+    <div id="sidr">
+      <p>READ WITH ME<p>
+      <a href="/books">Reading History</a></br>
+      <a href="/books/new">Add New Book</a></br>
+      <a href="/about">About</a></br>
+      <a href="http://twitter.com/share?text=Come%20read%20with%20me?">Tweet</a></br>
+
+    </div>
+  <% end %>
 
   <%= yield %>
 

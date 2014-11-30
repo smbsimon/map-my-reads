@@ -14,6 +14,8 @@
  *= require_self
  */
 
+ @import 'jquery.sidr.dark';
+
 .main_header {
   font-family: "Courier New";
   text-transform: uppercase;
@@ -51,4 +53,20 @@ p {
   select, input {
     margin-right: 1em;
   }
+}
+
+span {
+  font-family: "Courier New";
+  text-transform: lowercase;
+  text-align: center;
+  color: black;
+  font-size: 1.5em;
+  margin-left: 2em;
+}
+
+.sidr {
+  padding-top: 0.9cm;
+  font-family: "Courier New";
+  text-align: center;
+  color: white;
 }
