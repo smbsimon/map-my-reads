@@ -16,14 +16,19 @@
 </head>
 <body>
 
-  <a id="left-menu" href="#left-menu"><span>Menu</span></a>
+  <% if current_user %>
+    <a id="left-menu" href="#left-menu"><span>Menu</span></a>
 
 
-  <div id="sidr">
-    <a href="/books">Reading History</a></br>
-    <a href="/books/new">Add New Book</a>
-  </div>
+    <div id="sidr">
+      <p>READ WITH ME<p>
+      <a href="/books">Reading History</a></br>
+      <a href="/books/new">Add New Book</a></br>
+      <a href="/about">About</a></br>
+      <a href="http://twitter.com/share?text=Come%20read%20with%20me?">Tweet</a></br>
 
+    </div>
+  <% end %>
 
   <%= yield %>
 
