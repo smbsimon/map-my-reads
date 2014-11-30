@@ -2,39 +2,12 @@
 <html>
 <head>
 
-  <div class="mobile-nav">
-    <div class="menu-btn" id="menu-btn">
-      <div></div>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-    <div class="responsive-menu">
-      <ul>
-        <li>1. Object</li>
-        <li>2. Object</li>
-      </ul>
-    </div>
-  </div>
-
-
 
   <title>Read With Me</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-
-  
-  <script type="text/javascript">
-  jQuery(function($){
-    $( '.menu-btn' ).click(function(){
-      $('.responsive-menu').toggleClass('expand')
-    })
-  })
-  </script>
-
   <%= csrf_meta_tags %>
 </head>
 <body>
