@@ -7,20 +7,48 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="javascripts/sidr/stylesheets/jquery.sidr.dark.scss">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+
+</body>
+</html>
+
+<%= csrf_meta_tags %>
 </head>
 <body>
 
-  <%= yield %>
 
-  <div class="log_button">
-    <% if current_user %>
-    <p><%= link_to "Log Out", signout_path, class: "btn btn-lg btn-default" %></p>
-    <% else %>
-    <p><a class="btn btn-lg btn-default" href="/auth/twitter" role="button">Log In With Twitter</a></p>
-    <% end %>
-  </div>
+<!-- <script src="javascripts/jquery.js"></script> -->
+<!-- Include the Sidr JS -->
+
+
+
+<!-- <script src="javascripts/sidr/jquery.sidr.min.js"></script> -->
+
+<a id="simple-menu" href="#sidr">Toggle menu</a>
+
+<div id="sidr">
+  <!-- Your content -->
+  <ul>
+    <li><a href="#">List 1</a></li>
+    <li class="active"><a href="#">List 2</a></li>
+    <li><a href="#">List 3</a></li>
+  </ul>
+</div>
+
+
+
+
+
+<%= yield %>
+
+<div class="log_button">
+  <% if current_user %>
+  <p><%= link_to "Log Out", signout_path, class: "btn btn-lg btn-default" %></p>
+  <% else %>
+  <p><a class="btn btn-lg btn-default" href="/auth/twitter" role="button">Log In With Twitter</a></p>
+  <% end %>
+</div>
 
 
 </body>
