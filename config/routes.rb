@@ -9,7 +9,9 @@ Rails.application.routes.draw do
   get  'home/index'
   root 'home#index'
 
+
   resources :books
   resources :locations, only: [:new]
+  resources :about,     only: [:index]
   resources :shares,    only: [:new]
 end

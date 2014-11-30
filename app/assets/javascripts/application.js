@@ -16,8 +16,6 @@
 //= require_tree .
 
 
-
-
 $(document).ready(function() {
-  $('#simple-menu').sidr();
+  $('#left-menu').sidr();
 });

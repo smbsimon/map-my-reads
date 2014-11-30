@@ -2,7 +2,6 @@
 <html>
 <head>
 
-
   <title>Read With Me</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -17,38 +16,24 @@
 </head>
 <body>
 
-
-<!-- <script src="javascripts/jquery.js"></script> -->
-<!-- Include the Sidr JS -->
+  <a id="left-menu" href="#left-menu"><span>Menu</span></a>
 
 
-
-<!-- <script src="javascripts/sidr/jquery.sidr.min.js"></script> -->
-
-<a id="simple-menu" href="#sidr">Toggle menu</a>
-
-<div id="sidr">
-  <!-- Your content -->
-  <ul>
-    <li><a href="#">List 1</a></li>
-    <li class="active"><a href="#">List 2</a></li>
-    <li><a href="#">List 3</a></li>
-  </ul>
-</div>
+  <div id="sidr">
+    <a href="/books">Reading History</a></br>
+    <a href="/books/new">Add New Book</a>
+  </div>
 
 
+  <%= yield %>
 
-
-
-<%= yield %>
-
-<div class="log_button">
-  <% if current_user %>
-  <p><%= link_to "Log Out", signout_path, class: "btn btn-lg btn-default" %></p>
-  <% else %>
-  <p><a class="btn btn-lg btn-default" href="/auth/twitter" role="button">Log In With Twitter</a></p>
-  <% end %>
-</div>
+  <div class="log_button">
+    <% if current_user %>
+    <p><%= link_to "Log Out", signout_path, class: "btn btn-lg btn-default" %></p>
+    <% else %>
+    <p><a class="btn btn-lg btn-default" href="/auth/twitter" role="button">Log In With Twitter</a></p>
+    <% end %>
+  </div>
 
 
 </body>
