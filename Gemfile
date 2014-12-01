@@ -15,6 +15,7 @@ gem 'omniauth-twitter'
 gem 'twitter'
 gem "figaro"
 gem 'responders', '~> 2.0'
+gem 'faraday'
 
 group :test do
   gem 'rspec-rails', '~> 3.1.0'
