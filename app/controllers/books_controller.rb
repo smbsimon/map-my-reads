@@ -4,7 +4,7 @@ class BooksController < ApplicationController
   before_filter :current_user
 
   def index
-    @books = Book.all
+    @books = current_user.books
     @cities = @books.pluck(:city).uniq
     respond_with @books
   end
