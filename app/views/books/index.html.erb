@@ -1,10 +1,12 @@
 <div class="main_header">
   <h1>Read With Me?</h1>
-  <p> --- </p>
+  <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
 </div>
 
 <div class="section_header">
-<p> Hi, <%= @current_user.name %>. Here's what you've read:</p>
+</br><p> Hi, <%= @current_user.name %>. Here's what you've read:</p>
 <%= render "filter" %>
   <% @books.each do |book| %>
   <div class="book" data-city="<%= book.city %>">

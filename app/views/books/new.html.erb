@@ -3,8 +3,10 @@
 
   <%= form_for(@book) do |f| %>
     <%= f.label :city %>:
+    <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
     <%= f.text_field :city %>
     <%= f.label :title %>:
+    <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
     <%= f.text_field :title %></br></br>
     <%= f.submit "Add to My Reading History" %>
   <% end %>
