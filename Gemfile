@@ -1,9 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'omniauth-twitter'
-gem 'twitter'
-gem "figaro"
-gem 'responders', '~> 2.0'
 
 gem 'rails', '4.2.0.beta1'
 gem 'pg'
@@ -16,6 +12,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rails-html-sanitizer', '~> 1.0'
 gem 'therubyracer'
+gem 'omniauth-twitter'
+gem 'twitter'
+gem "figaro"
+gem 'responders', '~> 2.0'
 
 group :test do
   gem 'rspec-rails', '~> 3.1.0'
