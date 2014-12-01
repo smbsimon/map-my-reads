@@ -31,6 +31,13 @@
       <a href="/signout">Log Out</a></br>
     </div>
 
+    <script>
+    $(document).ready(function() {
+      $('#left-menu').sidr();
+    });
+    </script>
+
+
   <% else %>
     <p><a class="btn btn-lg btn-default" href="/auth/twitter" role="button">Log In with Twitter</a></p>
   <% end %>
