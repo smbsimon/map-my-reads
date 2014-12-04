@@ -19,5 +19,5 @@ Rails.application.routes.draw do
   resources :books
   resources :locations, only: [:index]
   resources :about,     only: [:index]
-  resources :shares,    only: [:new]
+  resources :shares,    only: [:index]
 end

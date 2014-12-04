@@ -16,18 +16,33 @@
 
  @import 'jquery.sidr.dark';
 
+.homepage_header {
+  font-family: "Courier New";
+  text-align: center;
+  letter-spacing: 0.5em;
+  padding-top: 2.5cm;
+  font-size: 175%;
+}
+
 .main_header {
   font-family: "Courier New";
   text-align: center;
-  letter-spacing: 0.1em;
-  padding-top: 1.5cm;
+  letter-spacing: 0.4em;
+  padding-top: 1cm;
+  padding-bottom: 2em;
+}
+
+#tagline {
+  letter-spacing: 0.2em;
+  font-size: 125%;
+  padding-bottom: 2em;
 }
 
 .page_header {
   font-family: "Courier New";
   text-align: center;
   letter-spacing: 0.1em;
-  padding-top: 1.5cm;
+  padding-top: 1cm;
   padding-bottom: 0.8cm;
 }
 
@@ -35,7 +50,6 @@
   font-family: "Courier New";
   text-align: center;
   letter-spacing: 0.1em;
-  padding-top: .2cm;
   padding-bottom: 1.5cm;
 }
 
@@ -50,7 +64,6 @@ p {
   font-family: "Courier New", monospace;
   font-size: 120%;
   text-align: center;
-  padding-bottom: 0.2cm;
 }
 
 .filter {
@@ -68,7 +81,7 @@ p {
 }
 
 .sidr {
-  padding-top: 0.9cm;
+  padding-top: 2cm;
   font-family: "Courier New";
   text-align: center;
   color: white;
@@ -81,5 +94,5 @@ p {
 
 #map {
   text-align: center;
-  padding-top: 0.2cm;
+  padding-top: 0.3cm;
 }
