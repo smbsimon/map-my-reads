@@ -4,18 +4,17 @@ describe 'choose a location', type: :feature do
 
   context 'when logged in' do
     before(:each) do
-      user = User.create({provider: "twitter", uid: 3, name: "Trout", oauth_token: "token", oauth_secret: "secret" })
+      user = User.create({provider: "twitter", uid: 3, name: "Trout", image: "test.png", oauth_token: "token", oauth_secret: "secret" })
       log_in(user)
       visit('/books/new')
-      click_button('Create Book')
     end
 
-    xit 'can select a location' do
-      fill_in('location', :with => 'coffee shop')
-      click_button('Next -->')
-      expect(page).to have_content('Share your book and location.')
-      expect(page).to have_link('Tweet')
-      expect(page).to have_link('Log Out')
+    xit 'can submit a new book' do
+      fill_in('book[city]', :with => 'denver')
+      fill_in('book[title]', :with => 'hamlet')
+      click_button('Add to My Reading History')
+      expect(page).to have_content('My name is')
+      expect(page).to have_content('hamlet')
     end
   end
 
