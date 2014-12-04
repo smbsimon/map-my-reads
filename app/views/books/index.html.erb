@@ -1,12 +1,8 @@
-<div class="main_header">
-  <h1>Map My Reads</h1><br>
-  <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
-  <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
-  <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-</div>
+<%= render "shared/icons" %>
 
 <div class="section_header">
-</br><p> My name is <%= @current_user.name %>. I love to read.</p>
+<p> My name is <%= @current_user.name %>. I love to read.</p>
+
 <%= render "filter" %>
   <% @books.each do |book| %>
   <div class="book" data-city="<%= book.city %>">
