@@ -10,6 +10,7 @@ describe 'the application', type: :feature do
     end
 
     xit 'can log out' do
+      click_link('Menu')
       click_link('Log Out')
       expect(page).to have_link('Log In')
     end
