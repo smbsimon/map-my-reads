@@ -21,7 +21,7 @@ class BooksController < ApplicationController
     @book = Book.new(book_params.merge(user_id: current_user.id))
     @book.save
 
-    redirect_to shares_path
+    redirect_to shares_path(title: @book.title, city: @book.city)
   end
 
 
