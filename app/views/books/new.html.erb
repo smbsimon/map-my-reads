@@ -1,6 +1,7 @@
+<%= render "shared/icons" %>
+
 <div class="page_header">
   <p> Where are you? What book are you reading?</p>
-
   <%= form_for(@book) do |f| %>
     <%= f.label :city %>:
     <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
@@ -10,5 +11,4 @@
     <%= f.text_field :title %></br></br>
     <%= f.submit "Add to My Reading History" %>
   <% end %>
-
 </div>
