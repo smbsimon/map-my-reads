@@ -2,6 +2,4 @@
 
 Three-week solo project for the Turing School of Software and Design.
 
-Production link: http://192.241.155.126
-
-Gem (to fulfill project requirements): https://github.com/smbsimon/map_my_reads_client
+Production link: http://www.mapmyreads.com
