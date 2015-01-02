@@ -20,10 +20,14 @@ class BooksController < ApplicationController
   def create
     @book = Book.new(book_params.merge(user_id: current_user.id))
     @book.save
-
     redirect_to shares_path(title: @book.title, city: @book.city)
   end
 
+  def destroy
+    @book = Book.find(params[:id])
+    @book.destroy
+    redirect_to books_path
+  end
 
   private
 

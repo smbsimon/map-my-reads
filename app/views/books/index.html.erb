@@ -7,6 +7,7 @@
   <% @books.each do |book| %>
   <div class="book" data-city="<%= book.city %>">
     <h4><%= book.title %></h4>
+    <h6><%= link_to "Delete", book_path(book), method: 'delete' %></h6>
   </div>
   <% end %>
 </div>
