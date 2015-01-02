@@ -1,11 +1,12 @@
 <%= render "shared/icons" %>
 
 <div class="section_header">
-<p> My name is <%= @current_user.name %>. I love to read.</p>
+  <p> My name is <%= @current_user.name %>. I love to read.</p>
 
-<%= render "filter" %>
+  <%= render "filter" %>
   <% @books.each do |book| %>
   <div class="book" data-city="<%= book.city %>">
     <h4><%= book.title %></h4>
   </div>
-<% end %>
+  <% end %>
+</div>
