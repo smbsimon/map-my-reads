@@ -1,11 +1,11 @@
 <p><a class="btn btn-lg btn-default" id="left-menu" href="#left-menu">Menu</a></p>
 <div id="sidr">
   <p>MAP MY READS<p><br>
-    <a href="/books">Reading History</a></br>
-    <a href="/books/new">Add New Book</a></br>
-    <a href="/locations">Find a Library</a></br>
-    <a href="/about">About</a></br><br>
-    <a href="/signout">Log Out</a>
+    <%= link_to "Reading History", books_path %></br>
+    <%= link_to "Add New Book", new_book_path %></br>
+    <%= link_to "Find a Library", locations_path %></br>
+    <%= link_to "About", about_index_path %></br></br>
+    <%= link_to "Log Out", signout_path %>
   </div>
 
   <script>
