@@ -4,8 +4,8 @@
   <p> My name is <%= @current_user.name %>. I love to read.</p>
 
   <% if @books.empty? %>
-    <p> -- </p>
-    <p> My reading history is empty. I should go read some books. </p>
+    <p> --- </p>
+    <p> My reading history is empty. I will go read some books. </p>
     <%= link_to "Add New Book", new_book_path %>
   <% else %>
     <%= render "filter" %>
