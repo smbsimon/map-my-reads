@@ -3,7 +3,14 @@
 <div class="section_header">
   <p> My name is <%= @current_user.name %>. I love to read.</p>
 
-  <%= render "filter" %>
+  <% if @books.empty? %>
+    <p> -- </p>
+    <p> Your reading history is empty. Go read some books. </p>
+    <%= link_to "Add a Book", new_book_path %>
+  <% else %>
+    <%= render "filter" %>
+  <% end %>
+
   <% @books.each do |book| %>
   <div class="book" data-city="<%= book.city %>">
     <h4><%= book.title %></h4>
