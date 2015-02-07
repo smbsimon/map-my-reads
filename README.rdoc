@@ -1,5 +1,12 @@
-== Map My Reads (formerly known as Read With Me)
-
-Three-week solo project for the Turing School of Software and Design.
+== MAP MY READS
 
 Production link: http://www.mapmyreads.com
+
+MAP MY READS started as a three-week solo project while I was at the Turing School. Three weeks goes by really quickly. What's still left to do:
+
+* Use Google Maps API to show a map of a user's reading history
+* Rework menu button into something much less clunky
+* Add to-read functionality
+* Tidy up responsive design
+* Figure out a best-practice way to test through the jQuery
+* NYPL API integration?
